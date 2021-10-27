@@ -1,0 +1,225 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+*{/*reset css*/
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+body{
+    width:1550px;
+    background: #fff;
+    margin:0px auto;
+    padding: 0px 5px;
+}
+#running{
+  background-color: #dfa79a;
+  display: block;
+  font-family: sans-serif;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+}
+#header{
+    width: 1182px;
+    height: 250px;
+    background: var(--navmenucolor);
+}
+#header .logo>img{
+    width: 200px;
+    height: 200px;
+    margin-left: 55%;
+}
+#header .search{
+    height: 35px;
+    border-radius: 12.5px;
+    width:250px;
+    float:left;
+    background: #dfa79a;
+    margin-left:100px;
+    margin-top: -100px;
+}
+#header .search input{
+    text-align: center;
+    line-height: 35px;
+    background: none;
+    border: none;
+    font-weight:100;
+    font-family: sans-serif;
+    color: white;
+    width:80%;
+}
+#header .search input:focus{
+    outline:none;
+}
+#header .search span{
+    color:rgb(85, 27, 27);
+    font-size:1.5rem; 
+    margin-top:2px;
+}
+#header .content{
+    float: right;
+    margin-top: -100px;
+    font-family: sans-serif;
+    font-weight: 100;
+    color:rgb(255, 253, 253);
+}
+#mainmenu{
+    height:52px;
+    background: var(--maincolor);
+    margin-top: -50px;
+    width: 1650px;
+}
+#mainmenu>ul{
+    height:100%;
+    list-style-type:none;
+}
+#mainmenu>ul>li>a{
+    height:100%;
+    float:left;
+    text-align: center;
+    line-height: 52px;
+    padding:0 50px;
+    position: relative;
+    color: black;
+    font-size: 2.1rem;
+    text-decoration: none;
+}
+
+#mainmenu>ul>li>a:hover{
+    color:rgb(168, 90, 80);
+    font-weight: bold;
+}
+#mainmenu>ul>li>ul{
+    width:150px;
+    background:#dfa79a;
+    list-style-type: none;
+    position: absolute;
+    margin-top: 50px;
+    left: 52px;
+    display: none;
+}
+#mainmenu>ul>li:hover >ul{
+    display: block;
+    margin-left: 170px;
+}
+#mainmenu>ul>li>ul>li{
+    font-size: 1.3rem;
+    text-transform: none;
+    font-weight: normal;
+    height: 35px;
+    line-height: 35px;
+    background: #dfa79a;
+    text-align: left;
+    color: white;
+    text-align: left;
+    padding: 0 5px;
+    position: relative;
+}
+#mainmenu>ul>li>ul>li:hover{
+    color: rgb(168, 90, 80);
+    background: #f3b6a9;
+    animation: slide 1s;
+}
+@keyframes slide {
+    0%{left: 5px;}
+    20%{left: -4px;}
+    40%{left: 3px;}
+    60%{left: -2px;}
+    80%{left: 1px;}
+    100%{left: 0;}
+}
+#banner{
+    height: 100%;
+    width: 100%;
+}
+#danhmucsp{
+    background: var(--maincolor);
+    margin-top: 10px;
+    align-items: center;
+    width: 1650px;
+    background: ;
+}
+#danhmucsp .tendanhmucsp{
+    color: rgb(168, 90, 80);
+    font-size: 3rem;
+    font-weight: bold;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    width: 1650px;
+    background: ;
+}
+#danhmucsp .hinhanhdanhmuc {
+    width: 1650px;
+    background: ;
+}
+#danhmucsp .hinhanhdanhmuc>ul>li{
+    float:left;
+    padding:0 30px;
+    position: relative;
+    list-style-type: none;
+}
+#danhmucsp .tendanhmuc>ul>li{
+    float:left;
+    width: 300px;
+    color: #fff;
+    background: #dfa79a;
+    padding: 10 80px;
+    text-align: center;
+    font-size: 20px;
+    list-style-type: none;
+    height: 30px;
+}
+#bestseller{
+    text-align: center;
+}
+#bestseller .title{
+    color: rgb(168, 90, 80);
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 100px;
+    text-align: center;
+    margin-top: 400px;
+}
+#bestseller .hinhanh>img{
+    width: calc(100%/3);
+    height: calc(100%/3);
+    float: left;
+    margin-top: 100px;
+    padding: 0 5px;
+}
+#newarrive .title-newarrive{
+    display: block;
+    color: rgb(168, 90, 80);
+    font-size: 3rem;
+    font-weight: bold;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+#newarrive .hinhanhnew>img{
+    float:left;
+    width: calc(100%/5);
+    margin-top: 80px;
+    height: calc(100%/5);
+    padding: 0 5px;
+    padding-top: 10px;
+}
+#footer {
+    height: 110px;
+    width: 100%;
+    background: #dfa79a;
+    margin-top: 1400px;
+}
+#footer .footer-content{
+    text-align: center;
+    color: white;
+}
